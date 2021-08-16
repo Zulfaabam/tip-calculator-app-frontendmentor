@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img class="logo-name" src="./images/logo.svg" alt="Logo" />
+      </div>
+      <div class="content-container">
+        <div class="input-container">
+          <div class="row-1 bill-row">
+            <h4 class="bill">Bill</h4>
+            <span class="form__label amt--label"></span>
+            <div class="input-container--fill input__box">
+              <i class="dollar-icon"
+                ><img src="./images/icon-dollar.svg" alt="Dollar Icon"
+              /></i>
+              <input
+                class="bill-input"
+                id="bill-el"
+                type="number"
+                placeholder="0"
+                min="0"
+                step="1"
+                max="10000"
+              />
+            </div>
+          </div>
+          <div class="row-2">
+            <h4 class="select-tip">Select Tip %</h4>
+            <span class="form__label custom--label"></span>
+            <div class="tip-btn-container">
+              <button class="tip-btn tip-btn--1">5%</button>
+              <button class="tip-btn tip-btn--2">10%</button>
+              <button class="tip-btn tip-btn--3">15%</button>
+              <button class="tip-btn tip-btn--4">25%</button>
+              <button class="tip-btn tip-btn--5">50%</button>
+              <div class="custom-input-container input__box">
+                <input
+                  class="custom-input"
+                  id="custom-el"
+                  type="number"
+                  placeholder="Custom"
+                  min="1"
+                  step="1"
+                  max="100"
+                />
+                <!-- <button class="tip-btn tip-btn--6">Custom</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="row-3">
+            <h4 class="people">Number of People</h4>
+            <span class="form__label people--label">Cannot be Zero</span>
+            <div class="input-container--fill input__box">
+              <i class="person-icon"
+                ><img src="./images/icon-person.svg" alt="Person Icon"
+              /></i>
+              <input
+                id="people-el"
+                class="people-input"
+                type="number"
+                placeholder="0"
+                min="0"
+                step="1"
+                max="100"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="output-container">
+          <div class="tip-amount">
+            <h5>Tip Amount<span>/ person</span></h5>
+            <p class="output-number-tip">$0.00</p>
+          </div>
+          <div class="total-person">
+            <h5>Total<span>/ person</span></h5>
+            <p class="output-number-total">$0.00</p>
+          </div>
+          <div class="reset-btn-container">
+            <button class="reset-btn" disabled>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abam</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  background-color: $light-grayish-cyan-1;
+  font-family: 'Space Mono', monospace;
+}
+
+.container {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.content-container {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem;
+}
+
+.input-container {
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-right: 2rem;
+
+  .row-2 {
+    .tip-btn-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+  }
+
+  &--fill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.2rem 1.5rem;
+
+    input {
+      width: 100%;
+      text-align: right;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.custom-input-container {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-container {
+  background-color: $very-dark-cyan;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.tip-amount,
+.total-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    display: block;
+  }
+}
+
+.reset-btn-container {
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+}

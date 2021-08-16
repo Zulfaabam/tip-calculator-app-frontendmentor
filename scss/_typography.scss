@@ -1,0 +1,34 @@
+h4 {
+  color: $dark-grayish-cyan-1;
+  font-size: 14px;
+}
+
+.amt--label,
+.people--label,
+.custom--label {
+  visibility: hidden;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  border: none;
+  color: $dark-grayish-cyan-2;
+}
+
+.output-container {
+  span {
+    color: $dark-grayish-cyan-2;
+  }
+}
+
+.tip-amount,
+.total-person {
+  p {
+    margin-left: 5rem;
+    color: $strong-cyan;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
